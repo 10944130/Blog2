@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Yu Gothic", "Helvetica";
+  letter-spacing: 1.85px;
+}
+
+body {
+  background-color: rgb(248, 248, 250);
+}
+
+.all {
+  position: relative;
+  z-index: 1;
+  width: 1453px;
+  height: 3900px;
+  background-color: white;
+  /*border-style: solid;
+    border-color: #EAE0D7;
+    border-width: 2px;*/
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: rgb(231, 231, 231) 0px 0px 15px;
+}
+
+.all>p {
+  padding: 60px 0px 0px 100px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px;
+}
+
+/*img--------------------------------------------*/
+.orion-2 {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 600px;
+}
+
+/*------------------------------------------------*/
+.orion-txt {
+  float: right;
+  height: auto;
+  width: 555px;
+  /*margin-top: 100px;
+  margin-right: 190px;*/
+  line-height: 30px;
+  margin-left: -40px;
+}
+
+.orion-txt>h1 {
+  margin-bottom: 40px;
+}
+
+.orion-txt>h1>span {
+  font-size: 18px;
+}
+
+.orion-txt>p {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.orion-txt>span {
+  padding-bottom: 30px;
+}
+
+/*右側歌酖目錄---------------------------------------------------------------------------------------*/
+
+#mySidenav a {
+  position: fixed;
+  right: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  overflow: hidden;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#Orion {
+  top: 20px;
+  background-color: #C09D9B;
+}
+
+#Maniac {
+  top: 80px;
+  background-color: #B1ACB3;
+}
+
+#Lonelyst {
+  top: 140px;
+  background-color: #555;
+}
+
+#Upon {
+  top: 235px;
+  background-color: #f3cc98
+}
+
+#Cover {
+  top: 300px;
+  background-color: #E2C6C4
+}
+
+#Demo {
+  top: 440px;
+  background-color: #A39797
+}
+
+#Yoasobi {
+  top: 500px;
+  background-color: #555
+}
+
+
+/*下拉欄--------------------------------------------------------------------------------------------------------------*/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay>h1 {
+  position: relative;
+  top: 17%;
+  text-align: center;
+  color: #dadada;
+  font-weight: normal;
+  cursor: help;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+  font-size: 26px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+.more {
+  position: absolute;
+  z-index: 0;
+  background-color: #0000008e;
+  border-radius: 5px 5px 0 0px;
+  width: 130px;
+  height: 40px;
+  top: -40px;
+  left: 100px;
+}
+
+.more>span {
+  display: flex;
+  font-size: 19px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+  padding-top: 4px;
+  color: white;
+}
+
+/*歌詞----------------------------------------------------------------------------------------------*/
+
+.pabo {
+  margin-top: 70px;
+}
+
+.line {
+  height: 0.7px;
+  width: 1260px;
+  background-color: rgba(126, 126, 126, 0.555);
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+/*.pabo::after {
+  position: absolute;
+  content: '';
+  background-color: rgba(126, 126, 126, 0.555);
+  height: 0.7px;
+  width: 1300px;
+  top: 920px;
+  left: 300px;
+}*/
+
+.orion-lyrics {
+  line-height: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+/*footer---------------------------------------------------------------------------------------------------*/
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+footer>p {
+  padding-top: 150px;
+}
+
+/*TOP--------------------------------------------------------------------------------------------------------*/
+.top {
+  position: absolute;
+  z-index: 100;
+  margin: 50px;
+}
+
+#myBtn {
+  width: 100px;
+  height: auto;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  /*border-radius: 50px;
+  background-color: #afa58f;*/
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: .3s;
+}
+
+#myBtn0 {
+  width: 45px;
+  height: auto;
+  display: none;
+  position: fixed;
+  bottom: 110px;
+  right: 73px;
+  /*border-radius: 50px;
+  background-color: #afa58f;*/
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: .3s;
+}
+
+#myBtn:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#myBtn:hover+#myBtn0 {
+  display: block;
+  transform: scale(1.2, 1.2);
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
